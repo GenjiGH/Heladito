@@ -46,7 +46,7 @@
                 base.style.fontSize = `${currSize * 0.97}px`;
             }
             if (entropy < 0.05) {
-                document.querySelector('.yes-button')?.removeEventListener("click", handleYes);
+                document.querySelector('.yes-button')?.removeEventListener("click", handleSí);
                 document.querySelector('.no-button')?.removeEventListener("click", handleNo);
             }
         }, Math.random() * 20000 + 10000);
@@ -77,6 +77,6 @@ function handleNoClick() {
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
 
-function handleYesClick() {
+function handleSíClick() {
     window.location.href = "yes_page.html";
 }
